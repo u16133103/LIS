@@ -1,0 +1,123 @@
+/* You can add global styles to this file, and also import other style files */
+.form-group>input{
+    font-weight: bolder;
+}
+.form-group>label{
+    font-weight: lighter;
+}
+
+button[type="submit"]{
+    background-color: #396e6a;
+    color: #fff;
+
+}
+.jumbotron{
+    background-color: #fff;
+    padding-top: 32px;
+}
+
+table tr:hover{
+    cursor: pointer;
+}
+
+input.ng-touched.ng-invalid{
+    border-color: #dc3545;
+}
+div.validation-error{
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.bar {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    border: 2px solid #396e6a;
+border-radius: 25px;
+}
+
+.nav__links {
+    list-style: none;
+
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    color: #396e6a;
+}
+
+.navbtn {
+    padding: 9px 25px;
+    background-color:#396e6a;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color:#edf0f1 ;
+}
+
+th {
+background-color:#396e6a;
+color: #fff;
+
+}
+
+.trhead {
+    text-align: center;
+}
+
+nav {
+    border-color: #396e6a ;
+}
+
+footer {
+    text-align: center;
+}
+
+.linav {
+    display: inline-block;
+    padding: 0px 20px;
+    color: #396e6a;
+    font-size: xx-large;
+}
+
+
+option {
+    color: #396e6a;
+}
+
+select {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color:#396e6a ; 
+    border: 2px solid darkgray;
+    border-radius: 25px;
+    line-height: 200%;
+    justify-content: space-between;
+}
+
+.bodyform {
+   background-color: #396e6a;
+   padding: 9px 25px;
+   border-radius: 25px;
+}

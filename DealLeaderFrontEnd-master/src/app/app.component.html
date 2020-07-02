@@ -1,0 +1,72 @@
+<header>
+  <img [src]="url2" height="90">
+  <li class="linav">DealLeaderGroup</li>
+<nav>
+  <ul class="nav__links">
+    <select>
+      <option disabled selected>Admin</option>
+      <option value="UserRole">User Role</option>
+    </select>
+    <select>
+      <option disabled selected>Agent</option>
+      <option value="AgentType">Agent Type</option>
+    </select>
+    <select>
+      <option disabled selected>Admin</option>
+      <option value="ViewRequest">View Request for Agent Registration</option>
+      <option value="Agent">Agent</option>
+      <option value="Lead">Lead</option>
+      <option value="RFQ">Add Request for Quote</option>
+      <option value="Quote">Capture Quote Details</option>
+      <option value="MeetingSlots">Meeting Slots</option>
+      <option value="ViewSchedule">View Schedule</option>
+      <option value="Meeting">Meeting</option>
+      <option value="MeetingType">Meeting Type</option>
+      <option value="Commission">Commission</option>
+    </select>
+    <select>
+      <option disabled selected>Employee</option>
+      <option value="Employee">Employee</option>
+      <option value="EmployeeType">Employee Type</option>
+    </select>
+    <select>
+      <option disabled selected>Reporting</option>
+      <option value="LeadDetails">Lead Details Report</option>
+      <option value="LeadHistory">Agent Lead History Report</option>
+      <option value="ProductsSold">Products Sold Report</option>
+      <option value="InactiveLeads">Inactive Leads Report</option>
+      <option value="SignUp">Agent Sign Up Report</option>
+      <option value="GComission">Commission Report</option>
+    </select>
+    <select>
+      <option disabled selected>Supplier</option>
+      <option value="Supplier">Supplier</option>
+    </select>
+    <select>
+      <option disabled selected>Country</option>
+      <option value="Country">Country</option>
+      <option value="Province">Province</option>
+      <option value="Region">Region</option>
+    </select>
+    <select>
+      <option disabled selected>Product</option>
+      <option value="Product">Product</option>
+      <option value="ProductType">Product Type</option>
+      <option value="ProductCategory">Product Category</option>
+    </select>
+  </ul>
+</nav>
+<a href="#" class="cta"><button class="navbtn">Logout</button></a>
+</header>
+<br>
+<body class="bodyform">
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+</body>
+<div class="container text-center">
+  <img [src]="url" height="300">
+</div>
+
+<hr>
+<footer>By LeadingIT Solutions 2020</footer>

@@ -1,0 +1,16 @@
+<form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
+
+    <input type="hidden" name="Province_ID" #Province_ID="ngModel" [(ngModel)]="service.formData.Province_ID">
+
+    <div class="form-group">
+        <label>Province  Name</label>
+        <input name="Province_Name" #Province_Name="ngModel" [(ngModel)]="service.formData.Province_Name" class="form-control" required>
+        <div class="validation-error" *ngIf="Province_Name.invalid && Province_Name.touched">This field is required.</div>
+    </div>
+    <div class="w3-show-inline-block" >
+        <!--<button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block">Save</button>-->
+        <button type="submit" [disabled]="form.invalid" class="btn btn-xs ">Save</button>
+        <button type="reset" class="btn btn-xs " value="Cancel" >Cancel </button>
+    </div>
+</form>
+

@@ -1,0 +1,43 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
+
+    <!--<input type="hidden" name="Agent_Type_ID" #Agent_Type_ID="ngModel" [(ngModel)]="service.formData.Agent_Type_ID">
+
+    <div class="form-group">
+        <label>Agent Type Name</label>
+        <input name="Agent_Type_Name" #Agent_Type_Name="ngModel" [(ngModel)]="service.formData.Agent_Type_Name" class="form-control" required>
+        <div class="validation-error" *ngIf="Agent_Type_Name.invalid && Agent_Type_Name.touched">This field is required.</div>
+    </div>
+    <div class="form-group">
+        <label>Agent Type Description</label>
+        <input name="Agent_Type_Description" #Agent_Type_Description="ngModel" [(ngModel)]="service.formData.Agent_Type_Description" class="form-control" required>
+        <div class="validation-error" *ngIf="Agent_Type_Description.invalid && Agent_Type_Description.touched">This field is required.</div>
+    </div>
+    <div class="form-group">
+        <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block">Submit</button>
+    </div>-->
+    <div class="form-group">
+        <h2 align="center"> AGENT Details </h2><br>
+        <label align="center">Agent Name: John </label><br>
+        <label align="center"> Agent Surname: Smith  </label><br>
+        <label align="center"> Agent Surname: Smith  </label><br>
+        <label align="center"> Agent ID Number: 9605040256411</label><br>
+        <label align="center"> Agent Passport Number: R95437154</label><br>
+        <label align="center"> Company Registration: </label><br>
+        <label align="center"> Company Name: Float </label><br>
+        <label align="center"> Agent Contact Number: 0821459292</label><br>
+        <label align="center"> Agent Email Address: a@gmail.com </label><br> <br>
+     </div>  
+     <div class="form-group">
+        <button type= "button" >Confrim </button>
+        <button type= "button" >Decline  </button>
+        <button type= "button" >Cancel </button>
+     </div> 
+</form>
+

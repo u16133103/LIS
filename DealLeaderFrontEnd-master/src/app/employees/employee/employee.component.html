@@ -1,0 +1,48 @@
+<form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
+
+    <input type="hidden" name="Employee_ID" #Employee_ID="ngModel" [(ngModel)]="service.formData.Employee_ID">
+
+    <div class="form-group">
+        <label>Employee Name</label>
+        <input name="Employee_Name" #Employee_Name="ngModel" [(ngModel)]="service.formData.Employee_Name" class="form-control " required>
+        <div class="validation-error" *ngIf="Employee_Name.invalid && Employee_Name.touched">This field is required.</div>
+    </div>
+    <div class="form-group">
+        <label>Employee Surname</label>
+        <input name="Employee_Surname" #Employee_Surname="ngModel" [(ngModel)]="service.formData.Employee_Surname" class="form-control" required>
+        <div class="validation-error" *ngIf="Employee_Surname.invalid && Employee_Surname.touched">This field is required.</div>
+    </div>
+    <div class="form-group">
+        <label>Employee ID Number</label>
+        <input name="Employee_ID_NO" #Employee_ID_NO="ngModel" [(ngModel)]="service.formData.Employee_ID_NO" class="form-control" required>
+        <div class="validation-error" *ngIf="Employee_ID_NO.invalid && Employee_ID_NO.touched">This field is required.</div>
+    </div>
+    <div class="form-group">
+        <label>Employee Passport Number</label>
+        <input name="Employee_Passport_NO" #Employee_Passport_NO="ngModel" [(ngModel)]="service.formData.Employee_Passport_NO" class="form-control" required>
+        <div class="validation-error" *ngIf="Employee_Passport_NO.invalid && Employee_Passport_NO.touched">This field is required.</div>
+    </div>
+    <div class="form-group">
+        <label>Employee Physical Address</label>
+        <input name="Employee_Physical_Address" #Employee_Physical_Address="ngModel" [(ngModel)]="service.formData.Employee_Physical_Address" class="form-control" required>
+        <div class="validation-error" *ngIf="Employee_Physical_Address.invalid && Employee_Physical_Address.touched">This field is required.</div>
+    </div>
+    <div class="form-group">
+        <label>Employee Contact Number</label>
+        <input name="Employee_Contact_NO" #Employee_Contact_NO="ngModel" [(ngModel)]="service.formData.Employee_Contact_NO" class="form-control" required>
+        <div class="validation-error" *ngIf="Employee_Contact_NO.invalid && Employee_Contact_NO.touched">This field is required.</div>
+    </div>
+    <div class="form-group">
+        <label>Employee Email Address</label>
+        <input name="Employee_Email_Address" #Employee_Email_Address="ngModel" [(ngModel)]="service.formData.Employee_Email_Address" class="form-control" required>
+        <div class="validation-error" *ngIf="Employee_Email_Address.invalid && Employee_Email_Address.touched">This field is required.</div>
+    </div>
+    <div class="w3-show-inline-block" >
+        <!--<button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block">Save</button>-->
+        <button type="submit" [disabled]="form.invalid" class="btn btn-xs ">Save</button>
+        <button type="reset"  class="btn btn-xs " value="Cancel" >Cancel </button>
+    
+    </div>
+</form>
+
+

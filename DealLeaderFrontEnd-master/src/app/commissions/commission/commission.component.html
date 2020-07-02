@@ -1,0 +1,24 @@
+
+<form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
+    <!--<h1 align= "center">Maintain Commission</h1>-->
+    <input type="hidden" name="Commision_ID" #Commision_ID="ngModel" [(ngModel)]="service.formData.Commision_ID">
+
+    <div class="form-group">
+        <label>Commission Percentage:</label>
+        <input name="Commision_Percentage" #Commision_Percentage="ngModel" [(ngModel)]="service.formData.Commision_Percentage" class="form-control" required>
+        <div class="validation-error" *ngIf="Commision_Percentage.invalid && Commision_Percentage.touched">This field is required.</div>
+    </div>
+    <div class="form-group">
+        <!--<label>Commission Date</label>
+        <input name="Commision_Date" #Commision_Date="ngModel" [(ngModel)]="service.formData.Commision_Date" class="form-control" required>
+        <div class="validation-error" *ngIf="Commision_Date.invalid && Commision_Date.touched">This field is required.</div>-->
+        <label for="Commision_Date">Commision Date:</label>
+        <input type="date" id="Commision_Date" name="Commision_Date" #Commision_Date="ngModel" [(ngModel)]="service.formData.Commision_Date" class="form-control" required>
+        <div class="validation-error" *ngIf="Commision_Date.invalid && Commision_Date.touched">This field is required.</div>
+    </div>
+    <div class="w3-show-inline-block" >
+        <!--<button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block">Save</button>-->
+        <button type="submit" [disabled]="form.invalid" class="btn btn-xs ">Save</button>
+        <button type="reset" class="btn btn-xs " value="Cancel" >Cancel </button>
+    </div>
+</form>

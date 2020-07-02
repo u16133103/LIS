@@ -1,0 +1,23 @@
+
+
+<div class="form-group">
+    <label>Search</label>
+    <input class="form-control">
+</div>
+
+<table class="table table-hover">
+<tr class="trhead">
+        <th>Agent Type ID</th>
+        <th>Agent Type Name</th>
+        <th>Agent Type Description</th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let at of service.list">
+        <td (click)="populateForm(at)">{{at.Agent_Type_ID}}</td>
+        <td (click)="populateForm(at)">{{at.Agent_Type_Name}}</td>
+        <td (click)="populateForm(at)">{{at.Agent_Type_Description}}</td>
+        <td><button (click)="onDelete(at.Agent_Type_ID)" >Edit</button></td>
+        <td><button (click)="onDelete(at.Agent_Type_ID)" >View</button></td>
+        <td><button (click)="onDelete(at.Agent_Type_ID)" class="btn btn-sm btn-outline-danger">X</button></td>
+    </tr>
+</table>

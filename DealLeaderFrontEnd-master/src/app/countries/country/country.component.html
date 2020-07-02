@@ -1,0 +1,19 @@
+<form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
+
+    <input type="hidden" name="Country_ID" #Country_ID="ngModel" [(ngModel)]="service.formData.Country_ID">
+
+    <div class="form-group">
+        <label>Country Name</label>
+        <input name="Country_Name" #Country_Name="ngModel" [(ngModel)]="service.formData.Country_Name" class="form-control" required>
+        <div class="validation-error" *ngIf="Country_Name.invalid && Country_Name.touched">This field is required.</div>
+    </div>
+    <div class="form-group">
+        <div class="w3-show-inline-block" >
+            <!--<button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block">Save</button>-->
+            <button type="submit" [disabled]="form.invalid" class="btn btn-xs ">Save</button>
+            <button type="reset" class="btn btn-xs " value="Cancel" >Cancel </button>
+        </div>
+    </div>
+</form>
+
+
